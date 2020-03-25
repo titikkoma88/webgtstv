@@ -314,6 +314,15 @@ footer p {
 
 }
 
+.video h2 {
+    text-shadow: 2px 2px 5px red;
+    font-weight: bold;
+}
+
+.video h3 {
+    font-weight: bold;
+}
+
 .video-img {
     position: relative;
 }
