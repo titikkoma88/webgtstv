@@ -19,7 +19,29 @@ $('.page-scroll').on('click', function (e) {
 
     // tooltip
     $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
+        $('[data-toggle="tooltip"]').tooltip();  
+
+        // Scroll spy
+    $('body').scrollspy({
+        target: "#main-nav"
+    });
+
+    // Navbar fade
+    changeNavbar();
+
+    $(window).scroll(function () {
+        changeNavbar();
+    });
+
+    function changeNavbar() {
+        var navbar = $("#main-nav");
+        if ($(this).scrollTop() >= 50) {
+            navbar.addClass(".nav-itemn active").removeClass(".navbar-nav .nav-item");
+        } else if ($(this).scrollTop() < 50) {
+            navbar.removeClass(".nav-item active").addClass(".navbar-nav .nav-item");
+        }
+    }
+    
     });
 
 

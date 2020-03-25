@@ -81,7 +81,7 @@ body {
 
 .profil a {
     margin-top: 250px;
-    position: absolute;
+    position: relative;
     cursor: pointer;
     background-color: #F9B234;
     border: 1px solid #fff;
@@ -95,10 +95,14 @@ body {
     text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.7);
     position: absolute;
     text-align: justify;
+   
 }
 
 .profil h1 {
+    margin-top: 45px;
     text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.7);
+    font-family: 'Lora';
+    font-weight: bold;
 }
 
 .pProfil, .aProfil {
@@ -186,7 +190,7 @@ body {
 }
 
 .client {
-    background-color: #F7F8FB;
+    background-color: rgb(197, 198, 201);
 }
 
 .client .img-client {
