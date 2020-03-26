@@ -320,6 +320,15 @@ footer p {
 }
 
 .video h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.video h5 {
+    font-weight: bold;
+}
+
+.video p {
     font-weight: bold;
 }
 
@@ -424,6 +433,8 @@ footer p {
     visibility: visible;
     opacity: 1;
   }
+
+
 
 /* Product */
 
