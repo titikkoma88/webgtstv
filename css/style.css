@@ -1,15 +1,18 @@
 body {
     font-family: 'montserrat';
+    position: relative;
 }
 
 .navbar {
     background-color: #001120;
+    color: #F9B234 !important;
 }
 
 .nav-item {
     margin-right: 24px;
     font-weight: 200;
 }
+
 
 .nav-item.active a {
     color: #F9B234 !important;

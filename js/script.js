@@ -17,32 +17,7 @@ $('.page-scroll').on('click', function (e) {
 
 });
 
-    // tooltip
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();  
-
-        // Scroll spy
-    $('body').scrollspy({
-        target: "#main-nav"
-    });
-
-    // Navbar fade
-    changeNavbar();
-
-    $(window).scroll(function () {
-        changeNavbar();
-    });
-
-    function changeNavbar() {
-        var navbar = $("#main-nav");
-        if ($(this).scrollTop() >= 50) {
-            navbar.addClass(".nav-itemn active").removeClass(".navbar-nav .nav-item");
-        } else if ($(this).scrollTop() < 50) {
-            navbar.removeClass(".nav-item active").addClass(".navbar-nav .nav-item");
-        }
-    }
-    
-    });
+ 
 
 
 // paralax
@@ -83,7 +58,6 @@ $(window).scroll(function () {
 
 
 
-
     // Client
 
     if (wScroll > $('.client').offset().top - 400) {
@@ -91,17 +65,10 @@ $(window).scroll(function () {
             setTimeout(function () {
                 $('.client .img-client').eq(i).addClass('muncul');
             }, 300 * (i + 1));
-        });
+        });     
 
     }
-
-
-    // Who We Are
-    // else if( wScroll > $('.about').offset().top - 600 ) {
-    // $('.pAbout').addClass('pMuncul');
-    //  } 
-
-
+    
 
 
 });
