@@ -1,6 +1,6 @@
 // event pada saat link di klik
 
-$('.page-scroll').on('click', function (e) {
+$('.page-scroll').on('click', function(e) {
 
     //ambil isi href
     var tujuan = $(this).attr('href');
@@ -17,13 +17,27 @@ $('.page-scroll').on('click', function (e) {
 
 });
 
- 
+$('.nav-item').on('click', function() {
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+
+});
+
+$(document).ready(function() {
+
+    // Scroll spy
+    $('body').scrollspy({
+        target: "#main-nav",
+        offset: 60
+    });
+
+});
 
 
 // paralax
 
 // about
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     $('.pJumbo').addClass('pMuncul');
     $('.aJumbo').addClass('aMuncul');
@@ -32,7 +46,7 @@ $(window).on('load', function () {
     $('.aProfil').addClass('aMuncul');
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
     // Jumbotron
@@ -61,14 +75,21 @@ $(window).scroll(function () {
     // Client
 
     if (wScroll > $('.client').offset().top - 400) {
-        $('.client .img-client').each(function (i) {
-            setTimeout(function () {
+        $('.client .img-client').each(function(i) {
+            setTimeout(function() {
                 $('.client .img-client').eq(i).addClass('muncul');
             }, 300 * (i + 1));
-        });     
+        });
 
     }
-    
+
+
+    //Who We Are
+    //else if( wScroll > $('.about').offset().top - 600 ) {
+    //$('.pAbout').addClass('pMuncul');
+    //} 
+
+
 
 
 });

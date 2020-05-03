@@ -5,7 +5,7 @@ body {
 
 .navbar {
     background-color: #001120;
-    color: #F9B234 !important;
+    
 }
 
 .nav-item {
@@ -17,6 +17,11 @@ body {
 .nav-item.active a {
     color: #F9B234 !important;
     font-weight: 600;
+}
+
+.navbar .navfeat.active{
+        color: #F9B234 !important;
+        font-weight: 600;
 }
 
 /*  */
